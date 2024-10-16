@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import Head from 'next/head';
 import '../assests/styles/globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -12,6 +13,11 @@ const inter = Inter({
 export const metadata = {
   title: 'Bookit App | Book a room',
   description: 'Book a meeting or conference room for your team',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any', type: 'image/x-icon' },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
